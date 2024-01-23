@@ -1,0 +1,10 @@
+try {
+  // kode yang mungkin menghasilkan ArithmeticException
+  int x = 10;
+  int y = 0;
+  int z = x / y;
+} catch (ArithmeticException e) {
+  // kode untuk menangani ArithmeticException
+  System.out.println("Tidak dapat membagi dengan nol");
+  e.printStackTrace();
+}
