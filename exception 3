@@ -1,0 +1,9 @@
+try {
+  // kode yang mungkin menghasilkan FileNotFoundException
+  File file = new File("data.txt");
+  Scanner scanner = new Scanner(file);
+} catch (FileNotFoundException e) {
+  // kode untuk menangani FileNotFoundException
+  System.out.println("File tidak ditemukan");
+  e.printStackTrace();
+}
